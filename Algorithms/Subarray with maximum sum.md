@@ -2,7 +2,7 @@
 
 ---
 
-### ALgorithm Statement
+### Algorithm Statement
 
 Given an array of numbers `a[1,2,...,n]`. It is required to find subarray `a[l,...,r]` with the maximal sum.
 
@@ -76,4 +76,4 @@ We can also find the boundaries of the desired segment like this following way:
 
 Thanks for reading. This page will be updated later.
 
-*Happy Coding!*
+**Happy Coding!**

@@ -10,6 +10,9 @@ Given an array of numbers `a[1,2,...,n]`. It is required to find subarray `a[l,.
 
 #### Algorithm - 01
 
+<details>
+  <summary>Click To Expand</summary>
+	
 ```cpp
 	int ans = ara[0], sum = 0, min_sum = 0;
 	
@@ -19,8 +22,15 @@ Given an array of numbers `a[1,2,...,n]`. It is required to find subarray `a[l,.
 		min_sum = min(min_sum, sum);
 	}
 ```
+	
+</details>
+
+
 We can also find the boundaries of the desired segment like this following way:
 
+<details>
+  <summary>Click To Expand</summary>
+	
 ```cpp
 	int ans = ara[0], ans_l = 0, ans_r = 0;
 	int sum = 0, min_sum = 0, min_pos = 0;
@@ -40,8 +50,13 @@ We can also find the boundaries of the desired segment like this following way:
 	}
 ```
 
+</details>
+
 #### Algorithm - 02
 
+<details>
+  <summary>Click To Expand</summary>
+	
 ``` cpp
 	int ans = ara[0], sum = 0;
 	
@@ -52,8 +67,13 @@ We can also find the boundaries of the desired segment like this following way:
 	}
 ```
 
+</details>
+
 We can also find the boundaries of the desired segment like this following way:
 
+<details>
+  <summary>Click To Expand</summary>
+	
 ```cpp
 	int ans = ara[0], ans_l = 0, ans_r = 0;
 	int sum = 0, minus_pos = -1;
@@ -71,6 +91,8 @@ We can also find the boundaries of the desired segment like this following way:
 		}
 	}
 ```
+
+</details>
 
 ---
 

@@ -43,7 +43,7 @@ int main()
 		printf("%d is found at index %d\n", item, index);
 	}
 
-    r0;
+    return 0;
 }
 
 //ALHAMDULILLAH

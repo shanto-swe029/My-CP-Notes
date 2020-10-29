@@ -9,16 +9,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll          long long
-#define fastio      ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
-#define pb          push_back
-#define Pi          acos(-1.0)
-#define r0          return 0
-#define endl        "\n"
-#define show(x)     cout << x << endl
-#define take(x)     cin >> x
-#define debug       1
-
 int BinarySearch( int DATA[], int LB, int UB, int ITEM )
 {
 	int BEG = LB, END = UB, MID = ( int ) ( BEG + END ) / 2;

@@ -6,6 +6,21 @@
 |____________________________________|
 */
 
+/*
+	What is #Lower_Bound ?
+	The Lower Bound of X is the left most index in an array
+	that has a value greater than or equal to X.
+	
+	For example:
+	Consider ara[] = { 10, 20, 20, 20, 30, 30, 40, 50 };
+	Here,
+		Lower Bound of 20 =  1;
+		Lower Bound of 30 =  4;
+		Lower Bound of 25 =  4; [ 25 is not present in the array but 25 < 30 ]
+		Lower Bound of 5  =  0; [  5 is not present in the array and 5 < 10 ]
+		Lower Bound of 80 =  8; [ 80 is not present in the array and 80 is greater than the element of the last index ]
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -35,6 +35,8 @@
 	array. If the target value is greater than the element, the search continues in the upper half of the array. By doing this, the algorithm eliminates the
 	half in which the target value cannot lie in each iteration.
 	
+	Let A be an array, which has n elements and we want to search for a number T.
+	
 	PSEUDOCODE
 	----------------------------------------------
 	function binary_search(A, n, T) is
@@ -68,7 +70,7 @@ int BinarySearch( int DATA[], int LB, int UB, int ITEM )
 {
 	int BEG = LB, END = UB, MID = ( int ) ( BEG + END ) / 2;
 
-	while( ( BEG <= END ) && ( DATA[MID] != ITEM ) ) {
+	while( BEG <= END ) {
 		MID = ( int ) ( BEG + END ) / 2;
 		if( ITEM < DATA[MID] ) {
 			END = MID - 1;

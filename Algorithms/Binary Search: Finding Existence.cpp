@@ -66,17 +66,17 @@ using namespace std;
 	int ITEM   =   the item which we are searching.
 */
 
-int BinarySearch( int DATA[], int LB, int UB, int ITEM )
+int BinarySearch ( int DATA[], int LB, int UB, int ITEM )
 {
-	int BEG = LB, END = UB, MID = ( int ) ( BEG + END ) / 2;
-
+	int BEG = LB, END = UB, MID;
+	
 	while( BEG <= END ) {
 		MID = ( int ) ( BEG + END ) / 2;
-		if( ITEM < DATA[MID] ) {
-			END = MID - 1;
-		} 
-		else if( ITEM > DATA[MID] )  {
-			BEG = MID + 1;
+		if ( ITEM < DATA[MID] ) {
+			END  = MID - 1;
+		}
+		else if ( ITEM > DATA[MID] ) {
+			BIG = MID + 1;
 		}
 		else {
 			return MID;

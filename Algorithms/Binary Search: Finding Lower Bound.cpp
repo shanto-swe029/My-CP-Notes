@@ -1,3 +1,11 @@
+/*    BISMILLAHIR-RAHMANIR-RAHIM
+ ____________________________________
+|                                    |
+|      SHANTO_SUST_SWE-19__029       |
+|      shanto-swe029.github.io       |
+|____________________________________|
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -36,3 +44,5 @@ int main()
 	int LowerBound = BinarySearch_LowerBound( ara, 0, n-1, item );
 	std::cout << "Lower bound of " << item << " = " << LowerBound << endl;
 }
+
+// ALHAMDULILLAH

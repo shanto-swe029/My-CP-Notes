@@ -6,6 +6,18 @@
 |____________________________________|
 */
 
+/*
+	Solution Approach:
+	----------------------------------------------------------------------------------
+	Finding smallest element and largest element form a rotated array is almost same.
+	For smallest element,
+		out ITEM value was the last element of the array.
+	But here we have to work with the first element of the array considering it our 
+	ITEM value.
+	
+	You may understand the difference between these two functions by comparing them.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -46,14 +46,14 @@ int BinarySearch_RotatedArray_FindSmallestElement( int DATA[], int LB, int UB )
 		else
 		{
 			END = MID - 1;
-			if( DATA[MID] < ITEM ) 
+			if( DATA[MID] < smallestElement ) 
 			{
-				ITEM = DATA[MID];
+				smallestElement = DATA[MID];
 			}
 		}
 		MID = ( int ) ( BEG + END ) / 2;
 	}
-	return ITEM;
+	return smallestElement;
 }
 
 

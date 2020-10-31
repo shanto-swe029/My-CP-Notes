@@ -54,7 +54,7 @@ int main()
 	int largestElement = BinarySearch_RotatedArray_FindLargestElement( ara, lowerBound, upperBound );
 	std::cout << largestElement << endl;
 
-  return 0;
+	return 0;
 }
 
 //ALHAMDULILLAH

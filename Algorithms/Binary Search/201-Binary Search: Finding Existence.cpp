@@ -76,7 +76,7 @@ int BinarySearch ( int DATA[], int LB, int UB, int ITEM )
 			END  = MID - 1;
 		}
 		else if ( ITEM > DATA[MID] ) {
-			BIG = MID + 1;
+			BEG = MID + 1;
 		}
 		else {
 			return MID;

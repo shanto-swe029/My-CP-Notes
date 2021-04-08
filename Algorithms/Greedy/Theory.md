@@ -5,7 +5,10 @@ A **greedy algorithm** constructs a solution to the problem by always making a c
   The difficulty in designing greedy algorithms is to find a greedy strategy that always produces an optimal solution to the problem. The locally optimal choices in a greedy algorithm should also be globally optimal. It is often difficult to argue that a greedy algorithm works.
 
 
-<details><summary>Coin Problem</summary>
+## Coin Problem
+
+
+<details><summary>Click Me</summary>
 <p>
 
 As a first example, we consider a problem where we are given a set of coin values and our task is to form a sum of money using the coins. The values of the coins are **_{c<sub>1</sub>, c<sub>2</sub>,..., c<sub>k</sub>}_**, and each coin can be used as many times we want. What is the minimum numbers of coins needed?
@@ -16,9 +19,9 @@ As a first example, we consider a problem where we are given a set of coin value
  
  and the sum of money is **_520_**, we need at least four coins. The optimal solution is to select coins **_200+200+100+20_** whose sum is **_520_**.
  
- ### Greedy Algorithm
+### Greedy Algorithm
  
- A simple greedy algorithm to tge problem is to always select the largest possible coin, until we have constructed the required sum of money. This algorithm works in the example case, because we select two **_200_** cent coins, then one **_100_** cent coin and finally one **_20_** cent coin. But does this algorithm always work?
+A simple greedy algorithm to tge problem is to always select the largest possible coin, until we have constructed the required sum of money. This algorithm works in the example case, because we select two **_200_** cent coins, then one **_100_** cent coin and finally one **_20_** cent coin. But does this algorithm always work?
  
   It turns out that, for the set of euro coins, the gredy algorithm *always works*, i.e., it always produces a solution with the fewest possible number of coins. The correctness of the algorithm can be shown as follows: 
   
@@ -30,9 +33,13 @@ As a first example, we consider a problem where we are given a set of coin value
    
    This example shows that it can be dificult to argue that a greedy algorithm always works, even if the algorithm itself is simple.
    
-   ### General Case
+### General Case
    
-   
+In the general case, the coin set can contain any coins and the greedy algorithm _does not_ necessarily produce an optimal solution. 
+
+  We can prove that a greedy algorithm does not work by showing a counterexample where the algorithm gives a wrong answer. In this problem we can easily find a counterexample: if the coins are **_{1, 3, 4}_** and the largest sum is **_6_**, the greedy algorithm produces the solution **_4+1+1_** while the optimal solution is **_3+3_**.
+  
+  it is not known if the general coin problem can be solved using any greedy algorithm. However, in some cases, the general problem can be efficiently solved using a dynamic programming algorithm that always gives the correct answer.
 
 </p>
 </details>

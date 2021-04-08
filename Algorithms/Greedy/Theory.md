@@ -40,7 +40,9 @@ In the general case, the coin set can contain any coins and the greedy algorithm
 
   We can prove that a greedy algorithm does not work by showing a counterexample where the algorithm gives a wrong answer. In this problem we can easily find a counterexample: if the coins are **_{1, 3, 4}_** and the largest sum is **_6_**, the greedy algorithm produces the solution **_4+1+1_** while the optimal solution is **_3+3_**.
   
-  it is not known if the general coin problem can be solved using any greedy algorithm. However, in some cases, the general problem can be efficiently solved using a dynamic programming algorithm that always gives the correct answer.
+  It is not known if the general coin problem can be solved using any greedy algorithm. However, it is possible to _check_ in polynomial time if the greedy algorithm presented here works for a given set of coins.
+  
+  However, in some cases, the general problem can be efficiently solved using a dynamic programming algorithm that always gives the correct answer.
 
 </p>
 </details>
@@ -56,3 +58,7 @@ In the general case, the coin set can contain any coins and the greedy algorithm
 
 </p>
 </details>
+
+
+---
+

@@ -1,10 +1,12 @@
 /*
-    Extended Euclidean Algorithm
-    ---------------------------------------------------------
+    Extended Euclidean Algorithm     :::     Bezout's Identity
+    ----------------------------------------------------------
     For two integers A & B find two integers x & y such that
     
                 A * x + B * y = gcd(A, B)
-    ---------------------------------------------------------
+    Here, the existence of x & y are ensured by the "Bezout's
+    Identity". x & y are called the "Bezout Coefficients".
+    ----------------------------------------------------------
 */
 
 

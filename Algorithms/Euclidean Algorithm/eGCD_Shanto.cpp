@@ -1,14 +1,24 @@
+/*
+    Extended Euclidean Algorithm
+    ---------------------------------------------------------
+    For two integers A & B find two integers x & y such that
+    
+                A * x + B * y = gcd(A, B)
+    ---------------------------------------------------------
+*/
+
+
 #include <iostream>
 using namespace std;
 
-void bezoutCoefficient(long long A, long long B, long long* x, long long* y, long long* gcd) {
+void bezoutCoefficient_Shanto(long long A, long long B, long long* x, long long* y, long long* gcd) {
     if(B == 0) {
         (*gcd) = A;
         (*x) = 1;
         (*y) = 0;
     }
     else {
-        bezoutCoefficient(B, A%B, x, y, gcd);
+        bezoutCoefficient_Shanto(B, A%B, x, y, gcd);
         long long temp = (*x);
         (*x) = (*y);
         (*y) = temp - (A/B) * (*y);
@@ -23,7 +33,7 @@ int main( ) {
     px = &x, py = &y, pgcd = &gcd;
     A = 12, B = 42;
 
-    bezoutCoefficient(A, B, px, py, pgcd);
+    bezoutCoefficient_Shanto(A, B, px, py, pgcd);
     cout << A << " x (" << x << ") + " << B << " x (" << y << ") = " << gcd << endl;
     return 0;
 }

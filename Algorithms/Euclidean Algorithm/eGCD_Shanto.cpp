@@ -12,16 +12,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// using pair
-typedef pair<int, int> pii;
-pii extendedEuclid(int a, int b) { // returns x, y | ax + by = gcd(a,b)
-  if(b == 0) return pii(1, 0);
-  else {
-    pii d = extendedEuclid(b, a % b);
-    return pii(d.second, d.first - d.second * (a / b));
-  }
-}
-
 // using pointer
 void bezoutCoefficient_Shanto(long long A, long long B, long long* x, long long* y, long long* gcd) {
     if(B == 0) {
@@ -36,6 +26,16 @@ void bezoutCoefficient_Shanto(long long A, long long B, long long* x, long long*
         (*y) = temp - (A/B) * (*y);
     }
     return;
+}
+
+// using pair
+typedef pair<long long, long long> pii;
+pii extendedEuclid(long long a, long long b) {
+    if(b == 0) return pii(1, 0);
+    else {
+        pii d = extendedEuclid(b, a % b);
+        return pii(d.second, d.first - d.second * (a / b));
+    }
 }
 
 int main( ) {

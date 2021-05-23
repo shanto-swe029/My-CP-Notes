@@ -1,11 +1,13 @@
 /*
+	                              BISMILLAHIR-RAHMANIR-RAHIM
+	**************************************************************************************
 	What's here?
-	-------------------------------------------------------------------------------------
-	
+	**************************************************************************************
 	From a directed graph - 
 	1. Create an adjacent list
 	2. For each node, find out how many nodes are connected with it along with the nodes.
 	3. Find out the indegree and outdegree for each node.
+	**************************************************************************************
 */
 #include <bits/stdc++.h>
 using namespace std;

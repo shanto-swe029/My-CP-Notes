@@ -25,7 +25,7 @@ void push( Node** head_ref, int new_data )
 	3. Free memory of the node to be deleted
 */
 
-void deleteNode( Node** head_ref, int key ) 
+void deleteNodeWithKey( Node** head_ref, int key ) 
 {
 	// store the head node
 	Node* temp = *head_ref;
@@ -57,6 +57,47 @@ void deleteNode( Node** head_ref, int key )
 	delete temp;
 }
 
+/*
+	Delete a node at the given position
+*/
+void deleteNodeWithPosition( Node** head_ref, int position ) 
+{
+	// Check if the linked list is empty
+	if( *head_ref == NULL ) 
+		return;
+
+	// Store head node
+	Node* temp = *head_ref;
+
+	// If head needs to be removed
+	if( position == 0 ) {
+		// change head
+		*head_ref = temp -> next;
+		// free old head
+		delete temp;
+		return;
+	}
+
+	// Else find previous node of the node to be deleted
+	for( int i = 0; temp != NULL && i < position - 1; i++ ) { 
+		temp = temp -> next;
+	}
+
+	// If the position is more than the number of nodes
+	if( temp != NULL || temp -> next != NULL ) 
+		return;
+
+	// Else 'temp -> next' is the node to be deleted
+	// Store pointer to the next of node to be deleted
+	Node* next_node = temp -> next -> next;
+
+	// Unlink the node from the linked list
+	delete temp -> next; // Free memory
+
+	// Unlink the deleted node from the list
+	temp -> next = next_node;
+}
+
 void printList ( Node* node ) 
 {
 	std::cout << "Linked List : ";
@@ -82,10 +123,10 @@ int main()
 	
 	printList( linked_list );
 
-	deleteNode( &linked_list, 40 );
+	deleteNodeWithKey( &linked_list, 40 );
 	printList( linked_list );
 
-	deleteNode( &linked_list, 60 );
+	deleteNodeWithKey( &linked_list, 60 );
 	printList( linked_list );
 
 	/*

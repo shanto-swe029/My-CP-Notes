@@ -134,6 +134,8 @@ int main()
 		Linked List : 60 50 40 30 20 10 
 		Linked List : 60 50 30 20 10 
 		Linked List : 50 30 20 10 
+		Linked List : 50 30 10 
+		Linked List : 30 10 
 	*/
 	return 0;
 }

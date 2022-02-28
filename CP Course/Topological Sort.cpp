@@ -1,5 +1,5 @@
 /*
-           Topological short
+           Topological sort
             
         shanto-swe029.github.io
 */

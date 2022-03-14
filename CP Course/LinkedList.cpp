@@ -50,6 +50,13 @@ void deleteByValue( int val ) {
         return;
     }
     
+    if( root->val == val ) {
+        root = root->next;
+        std::cout << "Successfully Deleted " << val << endl;
+        printList();
+        return;
+    }
+    
     node *current_node = root;
     node *previousNode = NULL;
     bool found = false;
@@ -74,12 +81,14 @@ void deleteByValue( int val ) {
 
 int main()
 {
-    append(10);printList();
-    append(20);printList();
-    append(30);printList();
-    append(40);printList();
+    append(10);//printList();
+    append(20);//printList();
+    append(30);//printList();
+    append(40);//printList();
     append(50);printList();
     
+    deleteByValue(10);
+    deleteByValue(20);
     deleteByValue(40);
 
     return 0;

@@ -1,0 +1,18 @@
+Interlocked Pipelined Stages(IPS)
+
+MIPS 
+- Microprocessor without IPS
+- 32 registers, 32-bit each
+- uniform length instructions
+- RISC load-store architecture
+
+* How instructions are represented in MIPS processors?
+* Instruction Encoding
+
+* What is pipelining?
+- An inmplementation technique whereby multiple instructions are overlapped in execution.
+- It takes advantage if parallelism that exists among the actions needed to execute an instruction.
+- Pipelining is the key implementation technique to make fast CPU's.
+
+* Characteristics of pipeline
+* Pipelining in circuits

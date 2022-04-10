@@ -24,9 +24,9 @@ int minCoin( int i, int target ) {
     return mem[i][target] = min( res_1, res_2 );
 }
 
-int helper( int i, int w, int n ) {
+int helper( int i, int w, int k ) {
     if( w < 0 ) return inf;
-    if( i == n ) {
+    if( i == k ) {
         if( w == 0 ) return 0;
         return inf;
     }

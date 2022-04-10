@@ -24,6 +24,26 @@ int minCoin( int i, int target ) {
     return mem[i][target] = min( res_1, res_2 );
 }
 
+int helper( int i, int w, int n ) {
+    if( w < 0 ) return inf;
+    if( i == n ) {
+        if( w == 0 ) return 0;
+        return inf;
+    }
+    return mem[i][w];
+}
+
+int minCoinIterative( int k, target ) {
+    for( int i = n-1; i >= 0; i-- ) {
+        for( int w = 0; w <= target; w++ ) {
+            int res_1 = 1 + helper(i+1, w-coins[i], k);
+            int res_2 = helper(i+1, w, n);
+            mem[i][w] = min( res_1, res_2 );
+        }
+    }
+    return mem[0][target];
+}
+
 int main()
 {
     int target;
